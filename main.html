@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Joseph Alexanndry</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" class="logo-icon" />
+        basas-dev.sh
+      </div>
+      <nav>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="btn-en" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button id="btn-pt" data-lang-btn="pt" aria-pressed="false">PT</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="hero">
+        <h1 data-i18n="hero.title">Hi, I'm Joseph Alexanndry</h1>
+        <p data-i18n="hero.subtitle">
+          Backend-heavy full-stack developer based in Petrolina-PE, Brazil. ~2 years of experience building cloud-first apps with Python, Angular, and
+          AWS (serverless, event-driven microservices).
+        </p>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2 data-i18n="skills.title">Skills</h2>
+
+        <div class="skills-highlight">
+          <div class="badge" data-i18n="skills.badges.backend">Backend-first</div>
+          <div class="badge" data-i18n="skills.badges.serverless">Serverless</div>
+          <div class="badge">Python</div>
+          <div class="badge">Angular</div>
+          <div class="badge">AWS</div>
+          <div class="badge" data-i18n="skills.badges.testing">Testing & CI/CD</div>
+          <div class="badge">DynamoDB</div>
+          <div class="badge">API Gateway</div>
+          <div class="badge">Cognito</div>
+        </div>
+
+        <div class="skill-grid emphasis">
+          <article class="skill-card">
+            <h3>Python</h3>
+            <p data-i18n="skills.python.desc">REST APIs, automation, testing, domain-driven backends.</p>
+            <ul class="chips">
+              <li>FastAPI</li>
+              <li>Pytest</li>
+              <li>Pydantic</li>
+              <li>moto</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Angular</h3>
+            <p data-i18n="skills.angular.desc">Responsive UIs, reusable components, form flows, guards.</p>
+            <ul class="chips">
+              <li>Angular Material</li>
+              <li>RxJS</li>
+              <li>Forms</li>
+              <li>Routing</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>AWS</h3>
+            <p data-i18n="skills.aws.desc">Lambda, API Gateway, DynamoDB, SQS/SNS, Cognito, S3, CloudFront.</p>
+            <ul class="chips">
+              <li>CloudFormation</li>
+              <li>CodeBuild</li>
+              <li>CodePipeline</li>
+              <li>IaC</li>
+            </ul>
+          </article>
+
+          <article class="skill-card wide">
+            <h3 data-i18n="skills.method.title">Methodology & Engineering</h3>
+            <p data-i18n="skills.method.desc">Hexagonal architecture, event-driven design, observability-first, automation.</p>
+            <ul class="chips">
+              <li>DDD</li>
+              <li>Streams</li>
+              <li>Tracing/Logs</li>
+              <li>CDN/OAC</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 data-i18n="projects.title">Projects</h2>
+
+        <div class="project-card">
+          <h4>Posso Agendar — Healthcare Scheduling Platform</h4>
+          <p data-i18n="projects.pa.desc">
+            Multi-service platform for appointments and availability. Angular front-end with Python/AWS serverless back-end, DynamoDB data model,
+            streams and event propagation.
+          </p>
+          <p class="stack">Stack: Angular, Python, AWS Lambda, API Gateway, DynamoDB, SNS/SQS, CloudFront</p>
+        </div>
+
+        <div class="project-card">
+          <h4>Posso Agendar — Microservices (Serverless)</h4>
+          <p data-i18n="projects.ms.desc">
+            Hexagonal-architecture Lambdas with strict validators, IaC pipelines, and DynamoDB Streams → SQS fan-out for data change detection and
+            propagation across services.
+          </p>
+          <p class="stack">Stack: Python, AWS Lambda, DynamoDB Streams, SQS/SNS, CodeBuild/CodePipeline, CloudFormation</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="contact-grid">
+          <a href="mailto:joseph.alexanndry@hotmail.com" aria-label="Email">
+            <img src="assets/mail.png" alt="Email" class="contact-icon" />
+            <span>joseph.alexanndry@hotmail.com</span>
+          </a>
+          <a href="https://github.com/imsupeer" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img src="assets/github.png" alt="GitHub" class="contact-icon" />
+            <span>github.com/imsupeer</span>
+          </a>
+          <a href="https://www.linkedin.com/in/josephalexanndry" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <img src="assets/linkedin.png" alt="LinkedIn" class="contact-icon" />
+            <span>linkedin.com/in/josephalexanndry</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; <span id="year"></span> Joseph Alexanndry. <span data-i18n="footer.rights">All rights reserved.</span></footer>
+  </body>
+</html>
