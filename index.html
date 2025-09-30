@@ -20,6 +20,7 @@
       <nav>
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#experiences" data-i18n="nav.experiences">Experiences</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -100,26 +101,51 @@
         </div>
       </section>
 
-      <section id="projects" class="projects">
-        <h2 data-i18n="projects.title">Projects</h2>
+      <section id="experiences" class="experiences">
+        <h2 data-i18n="experiences.title">Experiences</h2>
 
-        <div class="project-card">
+        <div class="experience-card">
           <h4>RitmoCor — Healthcare Scheduling Platform</h4>
-          <p data-i18n="projects.pa.desc">
+          <p data-i18n="experiences.pa.desc">
             Multi-service platform for appointments and availability. Angular front-end with Python/AWS serverless back-end, DynamoDB data model,
             streams and event propagation.
           </p>
           <p class="stack">Stack: Angular, Python, AWS Lambda, API Gateway, DynamoDB, SNS/SQS, CloudFront</p>
         </div>
 
-        <div class="project-card">
+        <div class="experience-card">
           <h4>RitmoCor — Microservices (Serverless)</h4>
-          <p data-i18n="projects.ms.desc">
+          <p data-i18n="experiences.ms.desc">
             Hexagonal-architecture Lambdas with strict validators, IaC pipelines, and DynamoDB Streams → SQS fan-out for data change detection and
             propagation across services.
           </p>
           <p class="stack">Stack: Python, AWS Lambda, DynamoDB Streams, SQS/SNS, CodeBuild/CodePipeline, CloudFormation</p>
         </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 data-i18n="projects.title">Projects</h2>
+
+        <a class="project-card project-link" href="https://github.com/imsupeer/movieReservationSystemBackend" target="_blank" rel="noreferrer">
+          <h4>Movie Reservation</h4>
+          <p data-i18n="projects.movieres.desc">
+            Hexagonal-architecture backend for cinema seat reservations with JWT auth, movie & showtime management, seat availability/reservations,
+            cancellations, and admin reports.
+          </p>
+          <p class="stack">Python, FastAPI, SQLAlchemy, PostgreSQL, JWT, Docker</p>
+        </a>
+
+        <!-- <a class="project-card project-link" href="https://github.com/imsupeer/angular-cognito-admin-starter" target="_blank" rel="noreferrer">
+          <h4>angular-cognito-admin-starter</h4>
+          <p data-i18n="projects.angular.desc">Angular admin shell with Cognito auth, guards, interceptors and dark theme.</p>
+          <p class="stack">Angular, Material, Cognito</p>
+        </a>
+
+        <a class="project-card project-link" href="https://github.com/imsupeer/dynamodb-streams-change-propagation" target="_blank" rel="noreferrer">
+          <h4>dynamodb-streams-change-propagation</h4>
+          <p data-i18n="projects.streams.desc">CDC pattern with Streams → SQS, idempotency, DLQ and replay.</p>
+          <p class="stack">Lambda, DynamoDB Streams, SQS/SNS</p>
+        </a> -->
       </section>
 
       <section id="contact" class="contact">

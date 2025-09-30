@@ -2,6 +2,7 @@ const t = {
   en: {
     'nav.about': 'About',
     'nav.skills': 'Skills',
+    'nav.experiences': 'Experiences',
     'nav.projects': 'Projects',
     'nav.contact': 'Contact',
     'hero.title': "Hi, I'm Joseph Alexanndry",
@@ -16,17 +17,21 @@ const t = {
     'skills.aws.desc': 'Lambda, API Gateway, DynamoDB, SQS/SNS, Cognito, S3, CloudFront.',
     'skills.method.title': 'Methodology & Engineering',
     'skills.method.desc': 'Hexagonal architecture, event-driven design, observability-first, automation.',
-    'projects.title': 'Projects',
-    'projects.pa.desc':
+    'experiences.title': 'Experiences',
+    'experiences.pa.desc':
       'Multi-service platform for appointments and availability. Angular front-end with Python/AWS serverless back-end, DynamoDB data model, streams and event propagation.',
-    'projects.ms.desc':
+    'experiences.ms.desc':
       'Hexagonal-architecture Lambdas with strict validators, IaC pipelines, and DynamoDB Streams → SQS fan-out for data change detection and propagation across services.',
+    'projects.title': 'Personal Projects',
+    'projects.movieres.desc':
+      'Hexagonal-architecture backend for cinema seat reservations with JWT auth, movie & showtime management, seat availability/reservations,cancellations, and admin reports.',
     'contact.title': 'Contact',
     'footer.rights': 'All rights reserved.',
   },
   pt: {
     'nav.about': 'Sobre',
     'nav.skills': 'Skills',
+    'nav.experiences': 'Experiências',
     'nav.projects': 'Projetos',
     'nav.contact': 'Contato',
     'hero.title': 'Olá, me chamo Joseph Alexanndry',
@@ -41,11 +46,14 @@ const t = {
     'skills.aws.desc': 'Lambda, API Gateway, DynamoDB, SQS/SNS, Cognito, S3, CloudFront.',
     'skills.method.title': 'Metodologia & Engenharia',
     'skills.method.desc': 'Arquitetura hexagonal, design orientado a eventos, observabilidade e automação.',
-    'projects.title': 'Projetos',
-    'projects.pa.desc':
+    'experiences.title': 'Experiências',
+    'experiences.pa.desc':
       'Plataforma multi-serviços para agendamentos e disponibilidade. Front-end Angular com back-end serverless em Python/AWS, modelo de dados no DynamoDB, streams e propagação de eventos.',
-    'projects.ms.desc':
+    'experiences.ms.desc':
       'Lambdas em arquitetura hexagonal com validadores rígidos, pipelines de IaC e DynamoDB Streams → SQS para detecção e propagação de mudanças entre serviços.',
+    'projects.title': 'Projetos Pessoais',
+    'projects.movieres.desc':
+      'Backend de arquitetura hexagonal para reservas de assentos de cinema com autenticação JWT, gerenciamento de filmes e horários de exibição, disponibilidade/reservas de assentos, cancelamentos e relatórios administrativos.',
     'contact.title': 'Contato',
     'footer.rights': 'Todos os direitos reservados.',
   },
@@ -55,8 +63,7 @@ const t = {
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  const root = document.documentElement;
-  const saved = localStorage.getItem('lang') || (navigator.language || 'en').toLowerCase().startsWith('pt') ? 'pt' : 'en';
+  const saved = localStorage.getItem('lang') || ((navigator.language || 'en').toLowerCase().startsWith('pt') ? 'pt' : 'en');
   applyLang(saved);
 
   const enBtn = document.querySelector('[data-lang-btn="en"]');
