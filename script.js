@@ -7,7 +7,7 @@ const t = {
     'nav.contact': 'Contact',
     'hero.title': "Hi, I'm Joseph Alexanndry",
     'hero.subtitle':
-      'Backend-heavy full-stack developer based in Petrolina-PE, Brazil. ~2 years of experience building cloud-first apps with Python, Angular, and AWS (serverless, event-driven microservices).',
+      'Backend-heavy full-stack developer based in Petrolina-PE, Brazil. ~3 years of experience building cloud-first apps with Python, Angular, and AWS (serverless, event-driven microservices).',
     'skills.title': 'Skills',
     'skills.badges.backend': 'Backend-first',
     'skills.badges.serverless': 'Serverless',
@@ -36,7 +36,7 @@ const t = {
     'nav.contact': 'Contato',
     'hero.title': 'Olá, me chamo Joseph Alexanndry',
     'hero.subtitle':
-      'Desenvolvedor full-stack com foco em backend, em Petrolina-PE, Brasil. ~2 anos criando apps cloud-first com Python, Angular e AWS (microserviços serverless e orientados a eventos).',
+      'Desenvolvedor full-stack com foco em backend, em Petrolina-PE, Brasil. ~3 anos criando apps cloud-first com Python, Angular e AWS (microserviços serverless e orientados a eventos).',
     'skills.title': 'Skills',
     'skills.badges.backend': 'Foco em Backend',
     'skills.badges.serverless': 'Serverless',
