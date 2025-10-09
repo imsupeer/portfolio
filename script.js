@@ -25,6 +25,8 @@ const t = {
     'projects.title': 'Personal Projects',
     'projects.movieres.desc':
       'Hexagonal-architecture backend for cinema seat reservations with JWT auth, movie & showtime management, seat availability/reservations,cancellations, and admin reports.',
+    'projects.machine.desc':
+      'This porject is a local pipeline to ingest PDFs, train a small Transformer encoder, generate embeddings, build a vector index and browse results in a lightweight web UI with a zoomable graph. Everything runs on your machine.',
     'projects.micro.desc':
       'Text autocomplete 100% client-side in Brazilian Portuguese: custom BPE tokenizer, small causal Transformer, PyTorch training, INT8 quantization, and in-browser inference via WebAssembly (Rust).',
     'contact.title': 'Contact',
@@ -56,6 +58,8 @@ const t = {
     'projects.title': 'Projetos Pessoais',
     'projects.movieres.desc':
       'Backend de arquitetura hexagonal para reservas de assentos de cinema com autenticação JWT, gerenciamento de filmes e horários de exibição, disponibilidade/reservas de assentos, cancelamentos e relatórios administrativos.',
+    'projects.machine.desc':
+      'Este projeto é um pipeline local para ingerir PDFs, treinar um pequeno codificador Transformer, gerar embeddings, construir um índice vetorial e navegar pelos resultados em uma interface web leve com um gráfico com zoom. Tudo roda na sua máquina.',
     'projects.micro.desc':
       'Autocomplete de texto 100% client-side em português brasileiro: tokenizador BPE personalizado, pequeno transformador causal, treinamento PyTorch, quantização INT8 e inferência no navegador via WebAssembly (Rust).',
     'contact.title': 'Contato',
