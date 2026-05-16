@@ -1,178 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio | Joseph Alexanndry</title>
+    <title>Joseph Alexanndry | Software Engineer Backend & Cloud</title>
+    <meta
+      name="description"
+      content="Software Engineer based in Brazil with 4+ years of experience building backend systems, distributed architectures, AWS serverless platforms, REST APIs and data/AI tools."
+      data-i18n-content="meta.description"
+    />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://imsupeer.github.io/portfolio/" />
+    <meta property="og:title" content="Joseph Alexanndry | Software Engineer Backend & Cloud" data-i18n-content="meta.ogTitle" />
+    <meta
+      property="og:description"
+      content="Backend-heavy Software Engineer focused on AWS, microservices, serverless, distributed systems and reliable APIs."
+      data-i18n-content="meta.ogDescription"
+    />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://imsupeer.github.io/portfolio/" />
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo" class="logo-icon" />
-        basas-dev.sh
-      </div>
-      <nav>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#experiences" data-i18n="nav.experiences">Experiences</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </nav>
-      <div class="lang-switch">
-        <button id="btn-en" data-lang-btn="en" aria-pressed="true">EN</button>
-        <button id="btn-pt" data-lang-btn="pt" aria-pressed="false">PT</button>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#about" aria-label="Joseph Alexanndry portfolio home" data-i18n-aria-label="brand.aria">
+          <img src="assets/logo.png" alt="Joseph Alexanndry developer logo" class="brand-icon" />
+          <span class="brand-text">basas-dev.sh</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          data-i18n-aria-label="nav.toggleOpen"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" data-i18n-aria-label="nav.aria">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="social-pill"
+            href="https://github.com/imsupeer"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub profile"
+            data-i18n-aria-label="social.github"
+            >GH</a
+          >
+          <a
+            class="social-pill"
+            href="https://www.linkedin.com/in/josephalexanndry"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn profile"
+            data-i18n-aria-label="social.linkedin"
+          >
+            IN
+          </a>
+          <div class="lang-switch" role="group" aria-label="Language selector" data-i18n-aria-label="lang.aria">
+            <button id="btn-en" type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+            <button id="btn-pt" type="button" data-lang-btn="pt" aria-pressed="false">PT</button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main>
-      <section id="about" class="hero">
-        <h1 data-i18n="hero.title">Hi, I'm Joseph Alexanndry</h1>
-        <p data-i18n="hero.subtitle">
-          Backend-heavy full-stack developer based in Petrolina-PE, Brazil. ~3 years of experience building cloud-first apps with Python, Angular, and
-          AWS (serverless, event-driven microservices).
-        </p>
+    <main id="main">
+      <section id="about" class="section hero-section" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="terminal-prompt" data-i18n="hero.prompt">joseph@portfolio:~$ build reliable backend systems</p>
+            <h1 id="hero-title" data-i18n="hero.title">Joseph Alexanndry Pires dos Santos Soares</h1>
+            <p class="hero-position" data-i18n="hero.position">Software Engineer focused on Backend, Distributed Systems and AWS Cloud.</p>
+            <p class="hero-summary" data-i18n="hero.summary">
+              I design and build production-ready APIs, microservices and serverless platforms with Python, Java, JavaScript/TypeScript and AWS. My
+              work connects clean architecture, observability, automated testing and pragmatic delivery.
+            </p>
+
+            <div class="hero-ctas" aria-label="Primary actions" data-i18n-aria-label="hero.ctas.aria">
+              <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta.contact">Contact Me</a>
+            </div>
+
+            <ul class="hero-meta" aria-label="Professional summary" data-i18n-aria-label="hero.meta.aria">
+              <li>
+                <span data-i18n="hero.meta.location">Location</span>
+                <strong>Petrolina, PE, Brasil</strong>
+              </li>
+              <li>
+                <span data-i18n="hero.meta.experience">Experience</span>
+                <strong data-i18n="hero.meta.experienceValue">4+ years</strong>
+              </li>
+              <li>
+                <span data-i18n="hero.meta.focus">Focus</span>
+                <strong data-i18n="hero.meta.focusValue">Backend, AWS, Distributed Systems</strong>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="hero-terminal" aria-label="Terminal profile snapshot" data-i18n-aria-label="hero.terminal.aria">
+            <div class="terminal-bar" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="cmd">$</span> <span data-i18n="hero.terminal.command">cat profile.json</span></p>
+              <dl>
+                <div>
+                  <dt data-i18n="hero.terminal.role">role</dt>
+                  <dd data-i18n="hero.terminal.roleValue">Software Engineer</dd>
+                </div>
+                <div>
+                  <dt data-i18n="hero.terminal.stack">stack</dt>
+                  <dd>Python, Java, JS/TS, AWS</dd>
+                </div>
+                <div>
+                  <dt data-i18n="hero.terminal.systems">systems</dt>
+                  <dd data-i18n="hero.terminal.systemsValue">Microservices, Serverless, REST APIs</dd>
+                </div>
+                <div>
+                  <dt data-i18n="hero.terminal.signal">signal</dt>
+                  <dd data-i18n="hero.terminal.signalValue">40% faster deploys at Ritmocor</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <section id="skills" class="skills-section">
-        <h2 data-i18n="skills.title">Skills</h2>
-
-        <div class="skills-highlight">
-          <div class="badge" data-i18n="skills.badges.backend">Backend-first</div>
-          <div class="badge" data-i18n="skills.badges.serverless">Serverless</div>
-          <div class="badge">Python</div>
-          <div class="badge">Angular</div>
-          <div class="badge">AWS</div>
-          <div class="badge" data-i18n="skills.badges.testing">Testing & CI/CD</div>
-          <div class="badge">DynamoDB</div>
-          <div class="badge">API Gateway</div>
-          <div class="badge">Cognito</div>
+      <section id="expertise" class="section" aria-labelledby="expertise-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="expertise.kicker">Core Expertise</p>
+          <h2 id="expertise-title" data-i18n="expertise.title">Engineering backend systems that can be operated, observed and evolved.</h2>
+          <p data-i18n="expertise.intro">
+            My strongest work is at the intersection of backend engineering, cloud infrastructure and product delivery.
+          </p>
         </div>
 
-        <div class="skill-grid emphasis">
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="card-index">01</span>
+            <h3 data-i18n="expertise.backend.title">Backend APIs</h3>
+            <p data-i18n="expertise.backend.desc">
+              REST APIs, service boundaries, validation, domain logic, integration testing and production support.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-index">02</span>
+            <h3 data-i18n="expertise.cloud.title">AWS Serverless</h3>
+            <p data-i18n="expertise.cloud.desc">Lambda, API Gateway, SQS, SNS, DynamoDB, CloudWatch, CloudFormation and CI/CD pipelines.</p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-index">03</span>
+            <h3 data-i18n="expertise.arch.title">Distributed Architecture</h3>
+            <p data-i18n="expertise.arch.desc">Microservices, event-driven flows, asynchronous messaging, observability and failure-aware design.</p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-index">04</span>
+            <h3 data-i18n="expertise.data.title">Data & AI Tooling</h3>
+            <p data-i18n="expertise.data.desc">
+              ETL/ELT routines, data pipelines, vector search, local ML experiments and AI-assisted document workflows.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="skills.kicker">Toolbox</p>
+          <h2 id="skills-title" data-i18n="skills.title">Skills grouped by engineering surface</h2>
+          <p data-i18n="skills.intro">A backend-heavy stack with enough frontend and data experience to ship complete product workflows.</p>
+        </div>
+
+        <div class="skills-grid">
           <article class="skill-card">
-            <h3>Python</h3>
-            <p data-i18n="skills.python.desc">REST APIs, automation, testing, domain-driven backends.</p>
+            <h3 data-i18n="skills.backend.title">Backend</h3>
+            <p data-i18n="skills.backend.desc">APIs, services, authentication, domain logic and data access layers.</p>
             <ul class="chips">
+              <li>Python</li>
+              <li>Java</li>
               <li>FastAPI</li>
-              <li>Pytest</li>
-              <li>Pydantic</li>
-              <li>moto</li>
+              <li>REST APIs</li>
+              <li>SQLAlchemy</li>
+              <li>JWT</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Angular</h3>
-            <p data-i18n="skills.angular.desc">Responsive UIs, reusable components, form flows, guards.</p>
+            <h3 data-i18n="skills.cloud.title">Cloud & DevOps</h3>
+            <p data-i18n="skills.cloud.desc">Serverless infrastructure, deployment automation and operational visibility.</p>
             <ul class="chips">
-              <li>Angular Material</li>
-              <li>RxJS</li>
-              <li>Forms</li>
-              <li>Routing</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>AWS</h3>
-            <p data-i18n="skills.aws.desc">Lambda, API Gateway, DynamoDB, SQS/SNS, Cognito, S3, CloudFront.</p>
-            <ul class="chips">
+              <li>AWS Lambda</li>
+              <li>API Gateway</li>
+              <li>SQS</li>
+              <li>SNS</li>
+              <li>DynamoDB</li>
+              <li>CloudWatch</li>
               <li>CloudFormation</li>
-              <li>CodeBuild</li>
-              <li>CodePipeline</li>
-              <li>IaC</li>
+              <li>CI/CD</li>
+              <li>Docker</li>
             </ul>
           </article>
 
-          <article class="skill-card wide">
-            <h3 data-i18n="skills.method.title">Methodology & Engineering</h3>
-            <p data-i18n="skills.method.desc">Hexagonal architecture, event-driven design, observability-first, automation.</p>
+          <article class="skill-card">
+            <h3 data-i18n="skills.arch.title">Architecture</h3>
+            <p data-i18n="skills.arch.desc">Service design with clear boundaries, asynchronous workflows and maintainable delivery practices.</p>
             <ul class="chips">
-              <li>DDD</li>
-              <li>Streams</li>
-              <li>Tracing/Logs</li>
-              <li>CDN/OAC</li>
+              <li>Microservices</li>
+              <li>Serverless</li>
+              <li>Event-Driven</li>
+              <li>Hexagonal Architecture</li>
+              <li>Observability</li>
+              <li>Automated Testing</li>
+              <li>Code Review</li>
+              <li>Agile/Scrum</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 data-i18n="skills.data.title">Data & AI</h3>
+            <p data-i18n="skills.data.desc">Data pipelines, ML experiments, embeddings and local retrieval workflows.</p>
+            <ul class="chips">
+              <li>SQL</li>
+              <li>NoSQL</li>
+              <li>ETL/ELT</li>
+              <li>Data Pipelines</li>
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>PyTorch</li>
+              <li>Ollama</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 data-i18n="skills.frontend.title">Frontend</h3>
+            <p data-i18n="skills.frontend.desc">Interfaces for product flows, admin tools and technical prototypes.</p>
+            <ul class="chips">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Angular</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SSE</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="experiences" class="experiences">
-        <h2 data-i18n="experiences.title">Experiences</h2>
-
-        <div class="experience-card">
-          <h4>RitmoCor — Healthcare Scheduling Platform</h4>
-          <p data-i18n="experiences.pa.desc">
-            Multi-service platform for appointments and availability. Angular front-end with Python/AWS serverless back-end, DynamoDB data model,
-            streams and event propagation.
-          </p>
-          <p class="stack">Stack: Angular, Python, AWS Lambda, API Gateway, DynamoDB, SNS/SQS, CloudFront</p>
+      <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
+          <h2 id="experience-title" data-i18n="experience.title">Professional timeline</h2>
+          <p data-i18n="experience.intro">Recent roles focused on backend delivery, cloud architecture, data automation and technical leadership.</p>
         </div>
 
-        <div class="experience-card">
-          <h4>RitmoCor — Microservices (Serverless)</h4>
-          <p data-i18n="experiences.ms.desc">
-            Hexagonal-architecture Lambdas with strict validators, IaC pipelines, and DynamoDB Streams → SQS fan-out for data change detection and
-            propagation across services.
-          </p>
-          <p class="stack">Stack: Python, AWS Lambda, DynamoDB Streams, SQS/SNS, CodeBuild/CodePipeline, CloudFormation</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <p class="period" data-i18n="experience.ritmocor.period">Nov 2023 - Nov 2025</p>
+                  <h3>Ritmocor</h3>
+                  <p class="role" data-i18n="experience.ritmocor.role">Software Engineer Backend & Cloud</p>
+                </div>
+                <span class="experience-tag">Backend / AWS</span>
+              </div>
+              <ul class="impact-list">
+                <li data-i18n="experience.ritmocor.item1">Built scalable REST APIs with Python and Java for healthcare scheduling workflows.</li>
+                <li data-i18n="experience.ritmocor.item2">
+                  Designed microservices and serverless workloads using AWS Lambda, API Gateway, SQS, SNS and DynamoDB.
+                </li>
+                <li data-i18n="experience.ritmocor.item3">
+                  Implemented CloudFormation infrastructure, CI/CD pipelines and CloudWatch logs, metrics and alarms.
+                </li>
+                <li data-i18n="experience.ritmocor.item4">
+                  Added unit and integration tests, improving release confidence and reducing deployment time by approximately 40%.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <p class="period" data-i18n="experience.compass.period">Dec 2022 - May 2023</p>
+                  <h3>Compass UOL</h3>
+                  <p class="role" data-i18n="experience.compass.role">Data Engineer / Backend Intern</p>
+                </div>
+                <span class="experience-tag">Data / AWS</span>
+              </div>
+              <ul class="impact-list">
+                <li data-i18n="experience.compass.item1">Created Python routines for ETL/ELT processing and backend data automation.</li>
+                <li data-i18n="experience.compass.item2">Worked with high-volume datasets and AWS-based data pipeline automation.</li>
+                <li data-i18n="experience.compass.item3">Improved dataset validation, standardization, versioning and reproducibility.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <p class="period" data-i18n="experience.inova.period">Jun 2022 - Nov 2022</p>
+                  <h3>Inova Tech Jr.</h3>
+                  <p class="role" data-i18n="experience.inova.role">Lead Software Engineer Intern</p>
+                </div>
+                <span class="experience-tag">Leadership</span>
+              </div>
+              <ul class="impact-list">
+                <li data-i18n="experience.inova.item1">
+                  Led end-to-end application development and aligned technical decisions with business requirements.
+                </li>
+                <li data-i18n="experience.inova.item2">Defined project standards, versioning workflows and code review practices.</li>
+                <li data-i18n="experience.inova.item3">
+                  Translated product needs into technical specifications for delivery by the engineering team.
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="projects" class="projects">
-        <h2 data-i18n="projects.title">Projects</h2>
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="projects.kicker">Selected Work</p>
+          <h2 id="projects-title" data-i18n="projects.title">Projects with backend, AI and systems depth</h2>
+          <p data-i18n="projects.intro">A few projects that show how I approach APIs, local AI, architecture and performance constraints.</p>
+        </div>
 
-        <a class="project-card project-link" href="https://github.com/imsupeer/movieReservationSystemBackend" target="_blank" rel="noreferrer">
-          <h4>Movie Reservation</h4>
-          <p data-i18n="projects.movieres.desc">
-            Hexagonal-architecture backend for cinema seat reservations with JWT auth, movie & showtime management, seat availability/reservations,
-            cancellations, and admin reports.
-          </p>
-          <p class="stack">Python, FastAPI, SQLAlchemy, PostgreSQL, JWT, Docker</p>
-        </a>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="card-index">01</span>
+              <h3>Local RAG Chat</h3>
+            </div>
+            <p data-i18n="projects.rag.desc">
+              Full-stack RAG application for private document analysis, running 100% locally with PDF/TXT ingestion, chunking, embeddings, semantic
+              search, local LLM integration through Ollama, SSE streaming and Docker Compose.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>LangChain</li>
+              <li>ChromaDB</li>
+              <li>Docker</li>
+              <li>Ollama</li>
+            </ul>
+            <a class="project-link" href="https://github.com/imsupeer/ragChat" target="_blank" rel="noreferrer" data-i18n="projects.repo"
+              >Repository</a
+            >
+          </article>
 
-        <a class="project-card project-link" href="https://github.com/imsupeer/simpleMachineLearningProject" target="_blank" rel="noreferrer">
-          <h4>Machine Learning Reader</h4>
-          <p data-i18n="projects.machine.desc">
-            This porject is a local pipeline to ingest PDFs, train a small Transformer encoder, generate embeddings, build a vector index and browse
-            results in a lightweight web UI with a zoomable graph. Everything runs on your machine.
-          </p>
-          <p class="stack">Python, FastAPI, Machine Learning, PyTorch, CUDA, Web Interface</p>
-        </a>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="card-index">02</span>
+              <h3>Movie Reservation</h3>
+            </div>
+            <p data-i18n="projects.movie.desc">
+              Hexagonal backend for cinema seat reservations with JWT authentication, movie and session management, seat availability, reservations,
+              cancellations and administrative reporting.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>SQLAlchemy</li>
+              <li>PostgreSQL</li>
+              <li>JWT</li>
+              <li>Docker</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/imsupeer/movieReservationSystemBackend"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="projects.repo"
+              >Repository</a
+            >
+          </article>
 
-        <a class="project-card project-link" href="https://github.com/imsupeer/microTransformerptBR" target="_blank" rel="noreferrer">
-          <h4>Micro Transformer to ptBR</h4>
-          <p data-i18n="projects.micro.desc">
-            Text autocomplete 100% client-side in Brazilian Portuguese: custom BPE tokenizer, small causal Transformer, PyTorch training, INT8
-            quantization, and in-browser inference via WebAssembly (Rust).
-          </p>
-          <p class="stack">Python, Rust→WASM, Angular</p>
-        </a>
+          <article class="project-card">
+            <div class="project-top">
+              <span class="card-index">03</span>
+              <h3>Machine Learning Reader</h3>
+            </div>
+            <p data-i18n="projects.ml.desc">
+              Local pipeline for PDF ingestion, training a small Transformer encoder, generating embeddings, creating a vector index and exploring
+              results through a web interface with a navigable graph.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>PyTorch</li>
+              <li>CUDA</li>
+              <li>Vector Index</li>
+              <li>Web UI</li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://github.com/imsupeer/simpleMachineLearningProject"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="projects.repo"
+              >Repository</a
+            >
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="card-index">04</span>
+              <h3>Micro Transformer pt-BR</h3>
+            </div>
+            <p data-i18n="projects.micro.desc">
+              Brazilian Portuguese autocomplete running 100% client-side with a custom BPE tokenizer, compact causal Transformer, INT8 quantization
+              and browser inference through Rust/WebAssembly.
+            </p>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Rust/WASM</li>
+              <li>Angular</li>
+              <li>PyTorch</li>
+              <li>BPE</li>
+              <li>INT8</li>
+            </ul>
+            <a class="project-link" href="https://github.com/imsupeer/microTransformerptBR" target="_blank" rel="noreferrer" data-i18n="projects.repo"
+              >Repository</a
+            >
+          </article>
+        </div>
       </section>
 
-      <section id="contact" class="contact">
-        <h2 data-i18n="contact.title">Contact</h2>
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Open to backend, cloud and distributed systems opportunities.</h2>
+          <p data-i18n="contact.intro">
+            The fastest way to reach me is email. You can also find code and professional updates through GitHub and LinkedIn.
+          </p>
+        </div>
+
         <div class="contact-grid">
-          <a href="mailto:joseph.alexanndry@hotmail.com" aria-label="Email">
-            <img src="assets/mail.png" alt="Email" class="contact-icon" />
-            <span>joseph.alexanndry@hotmail.com</span>
+          <a
+            class="contact-card"
+            href="mailto:joseph.alexanndry@hotmail.com"
+            aria-label="Send email to Joseph Alexanndry"
+            data-i18n-aria-label="contact.email.aria"
+          >
+            <img src="assets/mail.png" alt="" class="contact-icon" aria-hidden="true" />
+            <span>
+              <strong data-i18n="contact.email.label">Email</strong>
+              <small>joseph.alexanndry@hotmail.com</small>
+            </span>
           </a>
-          <a href="https://github.com/imsupeer" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <img src="assets/github.png" alt="GitHub" class="contact-icon" />
-            <span>github.com/imsupeer</span>
+
+          <a
+            class="contact-card"
+            href="https://github.com/imsupeer"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Joseph Alexanndry GitHub profile"
+            data-i18n-aria-label="contact.github.aria"
+          >
+            <img src="assets/github.png" alt="" class="contact-icon" aria-hidden="true" />
+            <span>
+              <strong>GitHub</strong>
+              <small>github.com/imsupeer</small>
+            </span>
           </a>
-          <!-- <a href="https://www.linkedin.com/in/josephalexanndry" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <img src="assets/linkedin.png" alt="LinkedIn" class="contact-icon" />
-            <span>linkedin.com/in/josephalexanndry</span>
-          </a> -->
+
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/josephalexanndry"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Joseph Alexanndry LinkedIn profile"
+            data-i18n-aria-label="contact.linkedin.aria"
+          >
+            <img src="assets/linkedin.png" alt="" class="contact-icon" aria-hidden="true" />
+            <span>
+              <strong>LinkedIn</strong>
+              <small>linkedin.com/in/josephalexanndry</small>
+            </span>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer>&copy; <span id="year"></span> Joseph Alexanndry. <span data-i18n="footer.rights">All rights reserved.</span></footer>
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> Joseph Alexanndry.</span>
+      <span data-i18n="footer.rights">All rights reserved.</span>
+    </footer>
   </body>
 </html>
